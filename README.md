@@ -132,7 +132,10 @@ This code implements a distributed matrix multiplication algorithm using MPI and
 
 The code demonstrates a distributed matrix multiplication implementation leveraging GPU acceleration. It provides a basic performance comparison between CPU, single-GPU, and distributed GPU executions.
 
-Output from local system (MAC m4)
+![Snapshot Response ](https://github.com/sudhirsinha-github/iisc-mini-project-m7/blob/main/Screenshot%202025-06-07%20at%2011.53.02%E2%80%AFPM.png)
+
+
+#####  Output from local system (MAC m4)
 
 (mpi-gpu-env) in22909502@INMLMLJWKHC0 app % mpirun -np 1 python distributed_matmul_gpu.py 2048
 
@@ -147,6 +150,7 @@ Hardware: Mac (MPS) | MPI Processes: 1
 ------------------------------------------------------------
 ✅ GPU vs. CPU Speedup: 1.37x
    (This shows the raw acceleration from using the GPU over a single CPU core)
+   
 ✅ Result verification successful.
 (mpi-gpu-env) in22909502@INMLMLJWKHC0 app % mpirun -np 2 python distributed_matmul_gpu.py 2048
 
@@ -180,8 +184,10 @@ Hardware: Mac (MPS) | MPI Processes: 4
   - Non-Distributed GPU Time:      0.184947 seconds
   - Distributed GPU Time (4 procs):  0.043474 seconds
 ------------------------------------------------------------
+
 ✅ GPU vs. CPU Speedup: 0.05x
    (This shows the raw acceleration from using the GPU over a single CPU core)
+
 ✅ Result verification successful.
 (mpi-gpu-env) in22909502@INMLMLJWKHC0 app % 
 
