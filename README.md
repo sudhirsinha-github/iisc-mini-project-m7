@@ -137,7 +137,7 @@ The code demonstrates a distributed matrix multiplication implementation leverag
 
 #####  Output from local system (MAC m4)
 
-(mpi-gpu-env) in22909502@INMLMLJWKHC0 app % mpirun -np 1 python distributed_matmul_gpu.py 2048
+(mpi-gpu-env) m4@INMLMLJWKHC0 app % mpirun -np 1 python distributed_matmul_gpu.py 2048
 
 Project: Distributed Matrix Multiplication (2048x2048)
 Hardware: Mac (MPS) | MPI Processes: 1
@@ -152,7 +152,7 @@ Hardware: Mac (MPS) | MPI Processes: 1
    (This shows the raw acceleration from using the GPU over a single CPU core)
    
 ✅ Result verification successful.
-(mpi-gpu-env) in22909502@INMLMLJWKHC0 app % mpirun -np 2 python distributed_matmul_gpu.py 2048
+(mpi-gpu-env) m4@INMLMLJWKHC0 app % mpirun -np 2 python distributed_matmul_gpu.py 2048
 
 Project: Distributed Matrix Multiplication (2048x2048)
 Hardware: Mac (MPS) | MPI Processes: 2
@@ -166,14 +166,14 @@ Hardware: Mac (MPS) | MPI Processes: 2
 ✅ GPU vs. CPU Speedup: 0.08x
    (This shows the raw acceleration from using the GPU over a single CPU core)
 ✅ Result verification successful.
-(mpi-gpu-env) in22909502@INMLMLJWKHC0 app % mpirun -np 4 python distributed_matmul_gpu.py 2048
+(mpi-gpu-env) m4@INMLMLJWKHC0 app % mpirun -np 4 python distributed_matmul_gpu.py 2048
 
 Project: Distributed Matrix Multiplication (2048x2048)
 Hardware: Mac (MPS) | MPI Processes: 4
 ------------------------------------------------------------
 
 ^C%                                                                                                                                                                   
-(mpi-gpu-env) in22909502@INMLMLJWKHC0 app % mpirun -np 4 python distributed_matmul_gpu.py 2048
+(mpi-gpu-env) m4@INMLMLJWKHC0 app % mpirun -np 4 python distributed_matmul_gpu.py 2048
 
 Project: Distributed Matrix Multiplication (2048x2048)
 Hardware: Mac (MPS) | MPI Processes: 4
@@ -189,7 +189,7 @@ Hardware: Mac (MPS) | MPI Processes: 4
    (This shows the raw acceleration from using the GPU over a single CPU core)
 
 ✅ Result verification successful.
-(mpi-gpu-env) in22909502@INMLMLJWKHC0 app % 
+(mpi-gpu-env) m4@INMLMLJWKHC0 app % 
 
 
 
